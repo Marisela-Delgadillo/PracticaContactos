@@ -14,6 +14,8 @@
 		3DD6F8A02901A3F7002A374C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD6F89E2901A3F7002A374C /* LaunchScreen.storyboard */; };
 		3DD6F8AB2901A3F8002A374C /* PracticaContactosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F8AA2901A3F8002A374C /* PracticaContactosTests.swift */; };
 		3DD6F8B62901A3F8002A374C /* PracticaContactosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F8B52901A3F8002A374C /* PracticaContactosUITests.swift */; };
+		3DD6F8C42901A8F8002A374C /* CeldaContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F8C32901A8F8002A374C /* CeldaContactoController.swift */; };
+		3DD6F8C62901AA8C002A374C /* Contacto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F8C52901AA8C002A374C /* Contacto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3DD6F8B12901A3F8002A374C /* PracticaContactosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticaContactosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD6F8B52901A3F8002A374C /* PracticaContactosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaContactosUITests.swift; sourceTree = "<group>"; };
 		3DD6F8B72901A3F8002A374C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD6F8C32901A8F8002A374C /* CeldaContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaContactoController.swift; sourceTree = "<group>"; };
+		3DD6F8C52901AA8C002A374C /* Contacto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				3DD6F89C2901A3F7002A374C /* Assets.xcassets */,
 				3DD6F89E2901A3F7002A374C /* LaunchScreen.storyboard */,
 				3DD6F8A12901A3F7002A374C /* Info.plist */,
+				3DD6F8C32901A8F8002A374C /* CeldaContactoController.swift */,
+				3DD6F8C52901AA8C002A374C /* Contacto.swift */,
 			);
 			path = PracticaContactos;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD6F8C62901AA8C002A374C /* Contacto.swift in Sources */,
 				3DD6F8982901A3F6002A374C /* ViewController.swift in Sources */,
+				3DD6F8C42901A8F8002A374C /* CeldaContactoController.swift in Sources */,
 				3DD6F8962901A3F6002A374C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
