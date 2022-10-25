@@ -9,12 +9,12 @@
 class Contacto {
     var nombre : String
     var telefono : String
-    var contactos: [Contacto]
+
     
-    init(nombre:String, telefono:String, contactos:[Contacto]){
+    init(nombre:String, telefono:String){
         self.nombre = nombre
         self.telefono = telefono
-        self.contactos = contactos
+
     }
     
 }
