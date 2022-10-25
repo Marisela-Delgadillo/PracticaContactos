@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D0D1ED929083102009BAB17 /* EditarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0D1ED829083102009BAB17 /* EditarController.swift */; };
+		3D0D1EDB29084645009BAB17 /* AgregarContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0D1EDA29084645009BAB17 /* AgregarContactoController.swift */; };
 		3DD6F8962901A3F6002A374C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F8952901A3F6002A374C /* AppDelegate.swift */; };
 		3DD6F8982901A3F6002A374C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6F8972901A3F6002A374C /* ViewController.swift */; };
 		3DD6F89B2901A3F6002A374C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD6F8992901A3F6002A374C /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		3D0D1ED829083102009BAB17 /* EditarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarController.swift; sourceTree = "<group>"; };
+		3D0D1EDA29084645009BAB17 /* AgregarContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarContactoController.swift; sourceTree = "<group>"; };
 		3DD6F8922901A3F5002A374C /* PracticaContactos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticaContactos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD6F8952901A3F6002A374C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD6F8972901A3F6002A374C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				3DD6F8C32901A8F8002A374C /* CeldaContactoController.swift */,
 				3DD6F8C52901AA8C002A374C /* Contacto.swift */,
 				3D0D1ED829083102009BAB17 /* EditarController.swift */,
+				3D0D1EDA29084645009BAB17 /* AgregarContactoController.swift */,
 			);
 			path = PracticaContactos;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0D1EDB29084645009BAB17 /* AgregarContactoController.swift in Sources */,
 				3DD6F8C62901AA8C002A374C /* Contacto.swift in Sources */,
 				3DD6F8982901A3F6002A374C /* ViewController.swift in Sources */,
 				3D0D1ED929083102009BAB17 /* EditarController.swift in Sources */,

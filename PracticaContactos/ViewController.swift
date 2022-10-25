@@ -34,10 +34,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tvContactos: UITableView!
     
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -51,9 +47,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         contactos.append(Contacto(nombre: "Papá", telefono: "6441012512"))
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let destino = segue.destination as! EditarController
-        destino.callBackActualizar = actualizarContacto
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToAgregar" {
+            let destino = segue.destination as! AgregarContactoController
+            destino.callBackAgregarContacto = agregarContacto
+        }
+        
+        if segue.identifier == "goToActualizar" {
+            let destino = segue.destination as! EditarController
+            destino.contacto = contactos[tvContactos.indexPathForSelectedRow!.row]
+            
+            destino.callBackActualizar = editarContacto
+        }
+        
+    }
+    
+    func agregarContacto(contacto: Contacto){
+        contactos.append(contacto)
+        tvContactos.reloadData()
+    }
+    
+    func editarContacto(contacto: Contacto){
+        tvContactos.reloadData()
     }
     
     //func actualizarContacto(nombre: String)

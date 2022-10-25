@@ -49,6 +49,7 @@
                                         <connections>
                                             <outlet property="lblNombre" destination="Nca-wJ-jLt" id="e7l-5J-YRJ"/>
                                             <outlet property="lblTelefono" destination="in4-bG-Rlo" id="b7k-0X-fNG"/>
+                                            <segue destination="JH5-9i-MGR" kind="show" identifier="goToActualizar" id="e6H-dE-PUY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -62,22 +63,24 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contactos" id="RMe-35-K8o">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DxC-yw-4p5"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DxC-yw-4p5">
+                            <connections>
+                                <segue destination="mng-yL-GhC" kind="show" identifier="goToAgregar" id="CQh-HC-ZAD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tvContactos" destination="uae-yI-zIG" id="Oug-Jq-vcS"/>
-                        <segue destination="mng-yL-GhC" kind="show" id="rAr-nq-F5s"/>
-                        <segue destination="JH5-9i-MGR" kind="show" id="UaG-Cn-Tl3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Agregar Contacto Controller-->
         <scene sceneID="FhQ-w9-bc0">
             <objects>
-                <viewController id="mng-yL-GhC" sceneMemberID="viewController">
+                <viewController id="mng-yL-GhC" customClass="AgregarContactoController" customModule="PracticaContactos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WJh-NI-5GI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,11 +117,18 @@
                                 <rect key="frame" x="338" y="256" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="doTapGuardar:" destination="mng-yL-GhC" eventType="touchUpInside" id="bve-KO-sLa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6gn-Ko-kgr"/>
                     </view>
+                    <connections>
+                        <outlet property="txtNombre" destination="g52-TZ-Hj9" id="W4I-jz-8yq"/>
+                        <outlet property="txtTelefono" destination="LqP-MJ-ywR" id="bTx-42-oEe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWp-nh-el7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
